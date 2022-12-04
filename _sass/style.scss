@@ -129,3 +129,8 @@ footer {
     background-image: url("../img/services-1920w.jpg");
   }
 }
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

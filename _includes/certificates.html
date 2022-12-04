@@ -1,8 +1,16 @@
-<section class="container-fluid">
+<section class="container-fluid p-md-0">
   <article class="container">
-    <div class="row">
-      <div class="col col-md-6 mx-auto">
-        <h2 class="text-center">Sertifikalarımız</h2>
+    <div class="row row-cols-1 row-cols-md-2 align-items-center">
+      <div class="col d-none d-md-block">
+        <picture>
+          <source srcset="{{ '/assets/img/certificate.jpg' | relative_url }}" media="(max-width: 512px)">
+          <source srcset="{{ '/assets/img/certificate@2x.jpg' | relative_url }}" media="(max-width: 1024px)">
+          <img src="{{ '/assets/img/certificate@3x.jpg' | relative_url }}" class="img-fluid flip"
+            alt="Skull with motorcycle helmet">
+        </picture>
+      </div>
+      <div class="col">
+        <h2 class="h1 mb-5">Sertifikalarımız</h2>
         <ul class="list-unstyled">
           {% for item in site.data.certificates %}
           <li>
