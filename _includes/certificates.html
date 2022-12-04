@@ -1,0 +1,16 @@
+<section class="container-fluid">
+  <article class="container">
+    <div class="row">
+      <div class="col col-md-6 mx-auto">
+        <h2 class="text-center">Sertifikalarımız</h2>
+        <ul class="list-unstyled">
+          {% for item in site.data.certificates %}
+          <li>
+            <i class="fa-regular fa-wrench-simple me-2"></i>{{ item }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
