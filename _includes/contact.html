@@ -1,8 +1,8 @@
-<section class="container-fluid">
+<section class="container-fluid" id="contact">
   <article class="container">
-    <div class="row row-cols-1 row-cols-md-2 align-items-center">
+    <div class="row row-cols-1 row-cols-md-2 align-items-center g-5">
       <div class="col">
-        <h2>İletişim</h2>
+        <h2 class="h1">İletişim</h2>
         <p>{{ site.adress }}</p>
         <p><a href="{{ site.phone.url }}">{{ site.phone.text }}</a></p>
         <ol class="list-unstyled">
@@ -11,8 +11,8 @@
           <li>Pazar: Kapalı</li>
         </ol>
         {% for item in site.data.social %}
-        <a class="btn btn-sm btn-outline-dark rounded-circle" href="{{ item.url }}" target="_blank">
-          <i class="fa-brands fa-{{ item.title}}"></i>
+        <a href="{{ item.url }}" target="_blank">
+          <i class="fa-brands fa-{{ item.title}} fa-lg me-3"></i>
         </a>
         {% endfor %}
       </div>
