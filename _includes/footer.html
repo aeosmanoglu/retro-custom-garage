@@ -1,0 +1,37 @@
+<footer class="container-fluid">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col">
+        <h5>{{ site.title }}</h5>
+        <p>{{ site.tagline }}</p>
+        {% for item in site.data.social %}
+        <a class="btn btn-sm btn-outline-dark rounded-circle" href="{{ item.url }}" target="_blank">
+          <i class="fa-brands fa-{{ item.title}}"></i>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="col">
+        <h5>Navigasyon</h5>
+        <ol class="list-unstyled">
+          {% for item in site.data.navs %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="col">
+        <h5>Çalışma Saatleri</h5>
+        <ol class="list-unstyled">
+          <li>Hafta içi: 10.00 - 20.00</li>
+          <li>Cumartesi: 10.00 - 19.00</li>
+          <li>Pazar: Kapalı</li>
+        </ol>
+      </div>
+      <div class="col">
+        <h5>İletişim</h5>
+        <p>{{ site.adress }}</p>
+        <p><a href="{{ site.phone.url }}">{{ site.phone.text }}</a></p>
+
+      </div>
+    </div>
+  </div>
+</footer>
