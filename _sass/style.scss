@@ -98,13 +98,22 @@ $headings-color: null;
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: $spacer/5;
+}
+
 section,
 footer {
-  padding: $spacer * 5 0;
+  padding: $spacer * 7.5 0;
 }
 
 #cta {
-  height: 80vh;
+  height: calc(100vh - 56px);
   background: url("../img/cta-640w.jpg") no-repeat no-repeat center center /
     cover;
   @media (min-width: 641px) {
