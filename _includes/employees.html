@@ -1,0 +1,18 @@
+<section class="container-fluid">
+  <article class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">Takım</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+          {% for item in site.data.employees %}
+          <div class="col text-center">
+            <img src="{{ item.image }}" class="img-thumbnail rounded-circle" alt="{{ item.name }}">
+            <h5>{{ item.name }}</h5>
+            <p>{{ item.position }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
