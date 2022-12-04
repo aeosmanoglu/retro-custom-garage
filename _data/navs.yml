@@ -1,8 +1,10 @@
 - title: Hakkımızda
-  url: hakkimizda
+  url: "#hakkimizda"
 - title: Hizmetlerimiz
-  url: hizmetlerimiz
+  url: "#hizmetlerimiz"
 - title: Galeri
-  url: galeri
+  url: "#galeri"
 - title: İletişim
-  url: iletisim
+  url: "#iletisim"
+- title: 0532 000 00 00
+  url: "tel:+905320000000"
