@@ -1,0 +1,11 @@
+- title: "Tamir & Bakım"
+  description: "Motorsikletleriniz için tüm tamir ve bakım işlemlerini yapıyoruz."
+  icon: "screwdriver-wrench"
+
+- title: "Yedek Parça"
+  description: "Tüm marka ve modelde yedek parçaları temin ediyoruz."
+  icon: "layer-plus"
+
+- title: "Dizayn"
+  description: "Motorsikletleriniz için özel dizayn çözümleri sunuyoruz."
+  icon: "motorcycle"
