@@ -7,3 +7,4 @@ layout: default
 {% include services.html %}
 {% include certificates.html %}
 {% include employees.html %}
+{% include contact.html %}

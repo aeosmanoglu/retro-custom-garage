@@ -5,6 +5,19 @@ url: ""
 author: Abuzer Emre Osmanoğlu
 keywords: retro, custom, garage, retro motosiklet, özel motosiklet tamirhanesi, özel motosiklet modifikasyonu, retro motosiklet parçaları, özel motosiklet aksesuarları, özel motosiklet servisi, klasik motosiklet, vintage motosiklet, motosiklet restore etme, chopper, crusier, cafe racer, scrambler, bobber
 locale: tr_TR
+timezone: Europe/Istanbul
+adress: Kızılcaşar, Barış Cd. 27/B, 06830 Gölbaşı/Ankara
+phone:
+  text: "0 555 555 55 55"
+  url: "tel:+905555555555"
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+  facebook: 1234
+logo: /assets/img/your-company-logo.png
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
