@@ -1,10 +1,74 @@
-// Custom.scss
-// Option B: Include parts of Bootstrap
-
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
+@import url("https://fonts.googleapis.com/css2?family=Girassol&family=Roboto+Condensed&display=swap");
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$orange: #fd7e14;
+
+$orange-50: tint-color($orange, 95%);
+$orange-100: tint-color($orange, 80%);
+$orange-200: tint-color($orange, 60%);
+$orange-300: tint-color($orange, 40%);
+$orange-400: tint-color($orange, 20%);
+$orange-500: $orange;
+$orange-600: shade-color($orange, 20%);
+$orange-700: shade-color($orange, 40%);
+$orange-800: shade-color($orange, 60%);
+$orange-900: shade-color($orange, 80%);
+$orange-1000: shade-color($orange, 95%);
+
+$primary: $orange-500;
+$secondary: $gray-600;
+$light: $gray-100;
+$dark: $gray-900;
+
+$enable-rounded: false;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$body-bg: $black;
+$body-color: $light;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-shade-percentage: 0%;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration: underline;
+
+$font-family-sans-serif: "Roboto Condensed", sans-serif;
+
+$h1-font-size: $spacer * 2.5;
+$h2-font-size: $spacer * 2;
+$h3-font-size: $spacer * 1.75;
+$h4-font-size: $spacer * 1.5;
+$h5-font-size: $spacer * 1.25;
+$h6-font-size: $spacer;
+
+$headings-font-family: "Girassol", cursive;
+$headings-font-weight: 400;
+$headings-line-height: 1.2;
+$headings-color: null;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -34,3 +98,22 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+section,
+footer {
+  padding: $spacer * 5 0;
+}
+
+#cta {
+  height: 80vh;
+  background: url("../img/cta-640w.jpg") no-repeat no-repeat center center /
+    cover;
+  @media (min-width: 641px) {
+    background-image: url("../img/cta-1920w.jpg");
+  }
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+}
